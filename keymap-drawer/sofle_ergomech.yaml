@@ -52,7 +52,7 @@ layers:
   - LGUI
   - LEFT GUI
   - {t: '-', h: symbols}
-  - symbols
+  - '='
   - RET
   - SPACE
   - {t: BACKSPACE, h: navigation}
