@@ -55,8 +55,8 @@ layers:
   - symbols
   - RET
   - SPACE
-  - navigation
-  - RCTRL
+  - {t: BACKSPACE, h: navigation}
+  - {t: Sft+Alt+Gui+ RCTRL, h: sticky}
   - RALT
   - RGUI
   - ENTER
