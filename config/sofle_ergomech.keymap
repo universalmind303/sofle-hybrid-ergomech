@@ -45,7 +45,7 @@
 &mt LC(LA(LSHIFT)) TAB     &lt 3 Q      &kp W         &mt RCTRL F  &kp P      &kp G    &kp J      &kp L            &mt RCTRL U            &kp Y       &kp SEMI     &kp GRAVE
 &mt LS(LA(LC(LGUI))) CAPS  &mt LSHFT A  &mt LALT R    &mt LGUI S   &kp T      &kp D    &kp H      &kp N            &mt RGUI E             &mt RALT I  &mt RSHFT O  &mt LS(LA(LC(LGUI))) SQT
 &kp LS(TAB)                &kp Z        &kp X         &kp C        &kp V      &kp B    &kp K      &kp M            &kp COMMA              &kp DOT     &kp FSLH     &kp RET
-&kp C_MUTE                 &kp LGUI     &kp LEFT_GUI  &lt 1 MINUS  &mo LOWER  &kp RET  &kp SPACE  &lt 2 BACKSPACE  &sk LS(LA(LG(RCTRL)))  &kp RALT    &kp RGUI
+&kp C_MUTE                 &kp LGUI     &kp LEFT_GUI  &lt 1 MINUS  &kp EQUAL  &kp RET  &kp SPACE  &lt 2 BACKSPACE  &sk LS(LA(LG(RCTRL)))  &kp RALT    &kp RGUI
                                                                                        &kp ENTER  &kp RIGHT        &kp UP_ARROW           &kp LEFT    &kp DOWN
             >;
 
