@@ -23,7 +23,7 @@
         compatible = "zmk,conditional-layers";
 
         adjust_layer {
-            if-layers = <LOWER RAISE>;
+            if-layers = <SYMBOLS NAVIGATION>;
             then-layer = <ADJUST>;
         };
     };
