@@ -145,7 +145,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - LCTRL
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - HOME
@@ -155,9 +155,9 @@ layers:
   - Gui+ ]
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LALT
-  - LCTRL
-  - LSHFT
+  - LEFT SHIFT
+  - LEFT ALT
+  - LEFT GUI
   - {t: ▽, type: trans}
   - CLCK
   - END
