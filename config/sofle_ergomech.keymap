@@ -16,6 +16,26 @@
 #define ADJUST 3
 
 / {
+    
+    behaviors {
+           lh_pht: left_positional_hold_tap {
+               compatible = "zmk,behavior-hold-tap";
+               #binding-cells = <2>;
+               flavor = "tap-unless-interrupted";
+               tapping-term-ms = <100>;                        // <---[[produces tap if held longer than tapping-term-ms]]
+               quick-tap-ms = <200>;
+               bindings = <&kp>, <&kp>;
+               hold-trigger-key-positions = <5 6 7 8 9 10>;    // <---[[right-hand keys]]
+           };
+           bhm: balanced_homerow_mods {
+                compatible = "zmk,behavior-hold-tap";
+                #binding-cells = <2>;
+                tapping-term-ms = <190>;    // <---[[moderate duration]]
+                quick-tap-ms = <0>;
+                flavor = "balanced";
+                bindings = <&kp>, <&kp>;
+            };
+       };
     // Activate ADJUST layer by pressing raise and lower
 
     conditional_layers {
@@ -42,8 +62,8 @@
 
             bindings = <
 &gresc                     &kp N1       &kp N2        &kp N3       &kp N4     &kp N5   &kp N6     &kp N7           &kp N8                 &kp N9      &kp N0       &kp DEL
-&mt LC(LA(LSHIFT)) TAB     &lt 3 Q      &kp W         &mt RCTRL F  &kp P      &kp G    &kp J      &kp L            &mt RCTRL U            &kp Y       &kp SEMI     &kp GRAVE
-&mt LS(LA(LC(LGUI))) CAPS  &mt LSHFT A  &mt LALT R    &mt LGUI S   &kp T      &kp D    &kp H      &kp N            &mt RGUI E             &mt RALT I  &mt RSHFT O  &mt LS(LA(LC(LGUI))) SQT
+&mt LC(LA(LSHIFT)) TAB     &lt 3 Q      &kp W         &lh_pht RCTRL F  &kp P      &kp G    &kp J      &kp L            &bhm RCTRL U            &kp Y       &kp SEMI     &kp GRAVE
+&lh_pht LS(LA(LC(LGUI))) CAPS  &lh_pht LSHFT A  &lh_pht LALT R    &lh_pht LGUI S   &kp T      &kp D    &kp H      &kp N            &bhm RGUI E             &bhm RALT I  &bhm RSHFT O  &bhm LS(LA(LC(LGUI))) SQT
 &kp LS(TAB)                &kp Z        &kp X         &kp C        &kp V      &kp B    &kp K      &kp M            &kp COMMA              &kp DOT     &kp FSLH     &kp RET
 &kp C_MUTE                 &kp LGUI     &kp LEFT_GUI  &lt 1 MINUS  &kp EQUAL  &kp RET  &kp SPACE  &lt 2 BACKSPACE  &sk LS(LA(LG(RCTRL)))  &kp RALT    &kp RGUI
                                                                                        &kp ENTER  &kp RIGHT        &kp UP_ARROW           &kp LEFT    &kp DOWN
