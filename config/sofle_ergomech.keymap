@@ -19,9 +19,13 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             tapping-term-ms = <190>;    // <---[[moderate duration]]
-            quick-tap-ms = <0>;
+            quick-tap-ms = <80>;
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
+
+            require-prior-idle-ms = <40>;
+            retro-tap;
+            hold-trigger-key-positions = <0 1 2 3 4 5 6 7 8 9 10 12 13 14 16 17 18 19 21 22 29 30 31 36 37 38 39 40 41 42 43 44 45 46 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 11 23 47 28>;
         };
 
         gesc: gesc {
@@ -32,6 +36,16 @@
             #binding-cells = <0>;
             mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI|MOD_RCTL|MOD_RALT|MOD_RGUI|MOD_LSFT|MOD_RSFT)>;
             keep-mods = <(MOD_LSFT)>;
+        };
+
+        mokp: mokp {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MOKP";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <195>;
+            hold-trigger-key-positions = <14 15 16 28 27 26 27 28 38 39 40 52 51>;
         };
     };
 
