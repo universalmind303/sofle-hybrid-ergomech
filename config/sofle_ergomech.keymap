@@ -14,8 +14,8 @@
 #define SYMBOLS 1
 #define NAVIGATION 2
 #define ADJUST 3
-#define MEH LCTL(LALT(LSFT))
-#define HYPER LCTL(LALT(LSFT(LGUI)))
+#define MEH LCTRL(LALT(LSHFT))
+#define HYPER LCTRL(LALT(LSHFT(LGUI)))
 / {
     // Activate ADJUST layer by pressing raise and lower
 
