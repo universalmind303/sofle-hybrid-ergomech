@@ -87,9 +87,9 @@
 
             bindings = <
 &none       &none         &none         &kp C_PLAY_PAUSE  &kp C_PREV    &kp C_NEXT       &none     &none             &none    &none     &none   &none
-&trans      &trans        &trans        &trans            &trans        &trans           &kp HOME  &kp LGUI(LPAR)    &kp LGUI(LSHFT(LPAR))    &kp LGUI(LSHFT(RPAR))     &kp LGUI(RPAR)   &trans
+&trans      &trans        &trans        &trans            &trans        &trans           &kp HOME  &kp LG(LPAR)    &kp LG(LS(LPAR))    &kp LG(LS(RPAR))     &kp LG(RPAR)   &trans
 &trans      &kp LALT      &kp LCTRL     &kp LSHFT         &trans        &kp CLCK         &kp END   &kp LEFT  &kp DOWN  &kp UT  &kp RIGHT     &trans
-&trans      &kp K_UNDO    &kp K_CUT     &kp K_COPY        &kp K_PASTE   &trans           &kp HOME  &kp LGUI(LEFT)    &kp PGDN    &kp PGUP     &kp LGUI(RIGHT)    &kp END
+&trans      &kp K_UNDO    &kp K_CUT     &kp K_COPY        &kp K_PASTE   &trans           &kp HOME  &kp LG(LEFT)    &kp PG_DN    &kp PG_UP     &kp LG(RIGHT)    &kp END
 &trans      &trans        &trans        &trans            &trans        &trans           &trans     &trans    &trans    &trans     &trans
                                                                                     &kp A      &kp B     &kp C     &kp D      &kp E
             >;
