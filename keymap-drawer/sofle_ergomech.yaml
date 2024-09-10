@@ -1,5 +1,5 @@
 layers:
-  default:
+  colemak:
   - {t: ESC, s: '`'}
   - '1'
   - '2'
@@ -51,11 +51,11 @@ layers:
   - MUTE
   - LGUI
   - LEFT GUI
-  - {t: '-', h: lower}
-  - lower
+  - {t: '-', h: symbols}
+  - symbols
   - RET
   - SPACE
-  - raise
+  - navigation
   - RCTRL
   - RALT
   - RGUI
@@ -64,7 +64,7 @@ layers:
   - UP ARROW
   - LEFT
   - DOWN
-  lower:
+  symbols:
   - {t: ▽, type: trans}
   - F1
   - F2
@@ -129,7 +129,7 @@ layers:
   - C
   - D
   - E
-  raise:
+  navigation:
   - ''
   - ''
   - ''
@@ -163,7 +163,7 @@ layers:
   - END
   - LEFT
   - DOWN
-  - UT
+  - UP
   - RIGHT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
