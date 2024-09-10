@@ -24,23 +24,14 @@
             bindings = <&kp>, <&kp>;
         };
 
-        bhl: balanced_homerow_mod_layer {
-            compatible = "zmk,behavior-hold-tap";
-            bindings = <&lt>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <190>;
-            quick-tap-ms = <0>;
-            flavor = "balanced";
-        };
-
         gesc: gesc {
             compatible = "zmk,behavior-mod-morph";
             label = "GESC";
             bindings = <&kp ESC>, <&kp GRAVE>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI|MOD_RCTL|MOD_RALT|MOD_RGUI)>;
+            mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI|MOD_RCTL|MOD_RALT|MOD_RGUI|MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_LSFT)>;
         };
     };
 
@@ -78,12 +69,12 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&gesc                       &kp N1        &kp N2        &kp N3        &kp N4                &kp N5   &kp N6     &kp N7           &kp N8                 &kp N9       &kp N0        &kp DEL
-&mt LC(LA(LSHIFT)) TAB      &lt 4 Q       &kp W         &bhm RCTRL F  &kp P                 &kp G    &kp J      &kp L            &bhm RCTRL U           &kp Y        &kp SEMI      &kp GRAVE
-&bhm LS(LA(LC(LGUI))) CAPS  &bhm LSHFT A  &bhm LALT R   &bhm LGUI S   &bhm LS(LA(LCTRL)) T  &kp D    &kp H      &kp N            &bhm RGUI E            &bhm RALT I  &bhm RSHFT O  &bhm LS(LA(LC(LGUI))) SQT
-&kp LS(TAB)                 &kp Z         &kp X         &kp C         &kp V                 &kp B    &kp K      &kp M            &kp COMMA              &kp DOT      &kp FSLH      &kp RET
-&kp C_MUTE                  &caps_word    &kp LEFT_GUI  &lt 1 MINUS   &kp EQUAL             &kp RET  &kp SPACE  &lt 2 BACKSPACE  &sk LS(LA(LG(RCTRL)))  &kp RALT     &kp RGUI
-                                                                                                     &kp ENTER  &kp RIGHT        &kp UP_ARROW           &kp LEFT     &kp DOWN
+&gesc                   &kp N1        &kp N2        &kp N3        &kp N4                &kp N5   &kp N6     &kp N7           &kp N8                 &kp N9       &kp N0        &kp DEL
+&mt LC(LA(LSHIFT)) TAB  &lt 4 Q       &kp W         &bhm RCTRL F  &kp P                 &kp G    &kp J      &kp L            &bhm RCTRL U           &kp Y        &kp SEMI      &kp GRAVE
+&kp CAPS                &bhm LSHFT A  &bhm LALT R   &bhm LGUI S   &bhm LS(LA(LCTRL)) T  &kp D    &kp H      &kp N            &bhm RGUI E            &bhm RALT I  &bhm RSHFT O  &bhm LS(LA(LC(LGUI))) SQT
+&kp LS(TAB)             &kp Z         &kp X         &kp C         &kp V                 &kp B    &kp K      &kp M            &kp COMMA              &kp DOT      &kp FSLH      &kp RET
+&kp C_MUTE              &caps_word    &kp LEFT_GUI  &lt 1 MINUS   &kp EQUAL             &kp RET  &kp SPACE  &lt 2 BACKSPACE  &sk LS(LA(LG(RCTRL)))  &kp RALT     &kp RGUI
+                                                                                                 &kp ENTER  &kp RIGHT        &kp UP_ARROW           &kp LEFT     &kp DOWN
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_DN &inc_dec_kp PG_UP PG_UP>;
