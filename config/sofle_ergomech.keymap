@@ -19,13 +19,11 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             tapping-term-ms = <190>;    // <---[[moderate duration]]
-            quick-tap-ms = <80>;
-            flavor = "balanced";
+            quick-tap-ms = <20>;
+            flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
 
-            require-prior-idle-ms = <40>;
-            retro-tap;
-            hold-trigger-key-positions = <0 1 2 3 4 5 6 7 8 9 10 12 13 14 16 17 18 19 21 22 29 30 31 36 37 38 39 40 41 42 43 44 45 46 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 11 23 47 28>;
+            require-prior-idle-ms = <50>;
         };
 
         gesc: gesc {
@@ -87,7 +85,7 @@
 &mt LC(LA(LSHIFT)) TAB  &mokp 3 Q     &kp W        &bhm RCTRL F  &kp P                 &kp G      &kp J      &kp L            &bhm RCTRL U           &kp Y        &kp SEMI      &kp GRAVE
 &kp CAPS                &bhm LSHFT A  &bhm LALT R  &bhm LGUI S   &bhm LS(LA(LCTRL)) T  &kp D      &kp H      &kp N            &bhm RGUI E            &bhm RALT I  &bhm RSHFT O  &bhm LS(LA(LC(LGUI))) SQT
 &kp LS(TAB)             &kp Z         &kp X        &kp C         &kp V                 &kp B      &kp K      &kp M            &kp COMMA              &kp DOT      &kp FSLH      &kp RET
-&kp C_MUTE              &caps_word    &caps_word   &kp LEFT_GUI  &lt 1 MINUS           &kp EQUAL  &kp SPACE  &lt 2 BACKSPACE  &sk LS(LA(LG(RCTRL)))  &kp RALT     &kp RGUI
+&kp C_MUTE              &caps_word    &caps_word   &kp LEFT_GUI  &lt 1 MINUS           &kp EQUAL  &kp SPACE  &lt 2 BACKSPACE  &sk LS(LA(LG(RCTRL)))  &key_repeat  &none
                                                                                                   &kp ENTER  &kp RIGHT        &kp UP_ARROW           &kp LEFT     &kp DOWN
             >;
 
@@ -109,7 +107,7 @@
 &trans  &kp F1    &kp F2    &kp F3    &kp F4    &kp F5      &kp F6     &kp F7    &kp F8     &kp F9    &kp F10    &kp F11
 &trans  &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT   &kp CARET  &kp AMPS  &kp ASTRK  &kp PIPE  &kp COLON  &none
 &none   &kp LPAR  &kp LBRC  &kp LBKT  &kp LT    &arrrow     &kp SQT    &kp GT    &kp RBKT   &kp RBRC  &kp RPAR   &kp GRAVE
-&trans  &kp RPAR  &kp RBRC  &kp RBKT  &kp GT    &fat_arrow  &none      &none     &trans     &trans    &trans     &trans
+&trans  &kp RPAR  &kp RBRC  &kp RBKT  &kp GT    &fat_arrow  &none      &none     &trans     &kp BSLH  &kp BSLH   &trans
 &trans  &trans    &trans    &trans    &trans    &trans      &trans     &trans    &trans     &trans    &trans
                                                             &kp A      &kp B     &kp C      &kp D     &kp E
             >;
