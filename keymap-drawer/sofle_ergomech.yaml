@@ -13,7 +13,7 @@ layers:
   - '0'
   - DEL
   - {t: TAB, h: Ctl+Alt+ LSHIFT}
-  - {t: Q, h: adjust}
+  - {t: Q, h: Q}
   - W
   - {t: F, h: RCTRL}
   - P
@@ -28,7 +28,7 @@ layers:
   - {t: A, h: LSHFT}
   - {t: R, h: LALT}
   - {t: S, h: LGUI}
-  - T
+  - {t: T, h: Sft+Alt+ LCTRL}
   - D
   - H
   - N
@@ -49,7 +49,7 @@ layers:
   - /
   - RET
   - MUTE
-  - LGUI
+  - '&caps_word'
   - LEFT GUI
   - {t: '-', h: symbols}
   - '='
@@ -94,7 +94,7 @@ layers:
   - '{'
   - '['
   - <
-  - ''
+  - '&arrrow'
   - ''''
   - '>'
   - ']'
@@ -106,7 +106,7 @@ layers:
   - '}'
   - ']'
   - '>'
-  - ''
+  - '&fat_arrow'
   - ''
   - ''
   - {t: ▽, type: trans}
@@ -195,12 +195,23 @@ layers:
   - D
   - E
   adjust:
-  - BT CLR
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - {t: BT, h: '4'}
+  - ''
+  - ''
+  - BT CLR
+  - ''
+  - ''
+  - '1'
+  - '2'
+  - '3'
   - ''
   - ''
   - ''
@@ -208,20 +219,11 @@ layers:
   - ''
   - ''
   - EP TOG
-  - {t: RGB HUD, type: held}
-  - RGB HUI
-  - RGB SAD
-  - RGB SAI
-  - RGB EFF
   - ''
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - RGB BRD
-  - RGB BRI
+  - '4'
+  - '5'
+  - '6'
   - ''
   - ''
   - ''
@@ -231,11 +233,9 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - '7'
+  - '8'
+  - '9'
   - ''
   - ''
   - ''
@@ -246,11 +246,11 @@ layers:
   - RGB TOG
   - ''
   - ''
+  - {t: ., type: held}
+  - '0'
   - ''
   - ''
-  - ''
-  - ''
-  - ''
+  - {type: held}
   - ''
   - ''
   - ''
