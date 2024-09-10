@@ -1,0 +1,261 @@
+layers:
+  default:
+  - gresc
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - DEL
+  - {t: TAB, h: LCTRL(LALT(LSHFT))}
+  - {t: Q, h: adjust}
+  - W
+  - {t: F, h: RCTRL}
+  - P
+  - G
+  - J
+  - L
+  - {t: U, h: RCTRL}
+  - Y
+  - ;
+  - '`'
+  - {t: CAPS, h: LCTRL(LALT(LSHFT(LGUI)))}
+  - {t: A, h: LSHFT}
+  - {t: R, h: LALT}
+  - {t: S, h: LGUI}
+  - T
+  - D
+  - H
+  - N
+  - {t: E, h: RGUI}
+  - {t: I, h: RALT}
+  - {t: O, h: RSHFT}
+  - {t: '''', h: LCTRL(LALT(LSHFT(LGUI)))}
+  - LSHFT(TAB)
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - K
+  - M
+  - ','
+  - .
+  - /
+  - RET
+  - MUTE
+  - LGUI
+  - LGUI
+  - {t: '-', h: lower}
+  - '='
+  - RET
+  - {t: SPACE, h: raise}
+  - {t: BSPC, h: raise}
+  - {t: LCTRL(LALT(LSHFT(LGUI))), h: sticky}
+  - RALT
+  - adjust
+  - ENTER
+  - RIGHT
+  - UP ARROW
+  - LEFT
+  - DOWN
+  lower:
+  - {t: ▽, type: trans}
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - F11
+  - {t: ▽, type: trans}
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - ^
+  - '&'
+  - '*'
+  - '|'
+  - ':'
+  - ''
+  - ''
+  - (
+  - '{'
+  - '['
+  - <
+  - ''
+  - ''''
+  - '>'
+  - ']'
+  - '}'
+  - )
+  - '`'
+  - {t: ▽, type: trans}
+  - )
+  - '}'
+  - ']'
+  - '>'
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&tran'
+  - A
+  - B
+  - C
+  - D
+  - E
+  raise:
+  - ''
+  - ''
+  - ''
+  - PLAY PAUSE
+  - PREV
+  - NEXT
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - HOME
+  - LGUI(LPAR)
+  - LGUI(LSHFT(LPAR))
+  - LGUI(LSHFT(RPAR))
+  - LGUI(RPAR)
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LALT
+  - LCTRL
+  - LSHFT
+  - {t: ▽, type: trans}
+  - CLCK
+  - END
+  - LEFT
+  - DOWN
+  - UT
+  - RIGHT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - UNDO
+  - CUT
+  - COPY
+  - PASTE
+  - {t: ▽, type: trans}
+  - HOME
+  - LGUI(LEFT)
+  - PGDN
+  - PGUP
+  - LGUI(RIGHT)
+  - END
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - A
+  - B
+  - C
+  - D
+  - E
+  adjust:
+  - BT CLR
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '4'}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - EP TOG
+  - {t: RGB HUD, type: held}
+  - RGB HUI
+  - RGB SAD
+  - RGB SAI
+  - RGB EFF
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - RGB BRD
+  - RGB BRI
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - RGB TOG
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - A
+  - B
+  - C
+  - D
+  - E
