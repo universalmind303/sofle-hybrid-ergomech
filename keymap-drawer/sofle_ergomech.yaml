@@ -149,10 +149,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - HOME
-  - Gui+ (
-  - Gui+Sft+ (
-  - Gui+Sft+ )
-  - Gui+ )
+  - Gui+ [
+  - Gui+Sft+ [
+  - Gui+Sft+ ]
+  - Gui+ ]
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - LALT
