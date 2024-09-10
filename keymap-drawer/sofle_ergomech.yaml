@@ -13,7 +13,7 @@ layers:
   - '0'
   - DEL
   - {t: TAB, h: Ctl+Alt+ LSHIFT}
-  - {t: Q, h: Q}
+  - {t: Q, h: '&lt 3'}
   - W
   - {t: F, h: RCTRL}
   - P
@@ -194,7 +194,7 @@ layers:
   - C
   - D
   - E
-  adjust:
+  numpad:
   - ''
   - ''
   - ''
