@@ -36,22 +36,22 @@ layers:
   - {t: I, h: RALT}
   - {t: O, h: RSHFT}
   - {t: '''', h: Meh+ LGUI}
-  - LSHFT
+  - Sft+ TAB
   - Z
   - X
   - C
   - V
   - B
-  - N
+  - K
   - M
   - ','
   - .
   - /
-  - RSHFT
+  - RET
   - MUTE
   - LGUI
-  - LALT
-  - LCTRL
+  - LEFT GUI
+  - {t: '-', h: lower}
   - lower
   - RET
   - SPACE
@@ -116,8 +116,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
