@@ -54,6 +54,13 @@
             #binding-cells = <0>;
             mods = <(MOD_LCTL|MOD_LSFT|MOD_LALT|MOD_LGUI|MOD_RCTL|MOD_RSFT|MOD_RALT|MOD_RGUI)>;
         };
+
+        cap_dance: cap_dance {
+            compatible = "zmk,behavior-tap-dance";
+            label = "CAP_DANCE";
+            #binding-cells = <0>;
+            bindings = <&caps_word>, <&kp CAPS>;
+        };
     };
 
     // Activate ADJUST layer by pressing raise and lower
@@ -92,7 +99,7 @@
             bindings = <
 &gesc                   &kp N1        &kp N2       &kp N3        &kp N4                &kp N5     &kp N6     &kp N7           &kp N8                 &kp N9       &kp N0        &kp DEL
 &mt LC(LA(LSHIFT)) TAB  &mokp 3 Q     &kp W        &bhm RCTRL F  &kp P                 &kp G      &kp J      &kp L            &bhm RCTRL U           &kp Y        &kp SEMI      &kp GRAVE
-&kp CAPS                &bhm LSHFT A  &bhm LALT R  &bhm LGUI S   &bhm LS(LA(LCTRL)) T  &kp D      &kp H      &kp N            &bhm RGUI E            &bhm RALT I  &bhm RSHFT O  &bhm LS(LA(LC(LGUI))) SQT
+&cap_dance              &bhm LSHFT A  &bhm LALT R  &bhm LGUI S   &bhm LS(LA(LCTRL)) T  &kp D      &kp H      &kp N            &bhm RGUI E            &bhm RALT I  &bhm RSHFT O  &bhm LS(LA(LC(LGUI))) SQT
 &kp LS(TAB)             &kp Z         &kp X        &kp C         &kp V                 &kp B      &kp K      &kp M            &kp COMMA              &kp DOT      &kp FSLH      &kp RET
 &kp C_MUTE              &caps_word    &none        &kp LEFT_GUI  &lt 1 MINUS           &kp EQUAL  &kp SPACE  &lt 2 BACKSPACE  &sk LS(LA(LG(RCTRL)))  &key_repeat  &none
                                                                                                   &qwerty    &kp C_NEXT       &kp UP_ARROW           &kp C_PREV   &kp DOWN
