@@ -133,9 +133,9 @@ layers:
   - ''
   - ''
   - ''
-  - PLAY PAUSE
-  - PREV
-  - NEXT
+  - ''
+  - ''
+  - ''
   - ''
   - ''
   - ''
@@ -159,7 +159,7 @@ layers:
   - LEFT ALT
   - LEFT GUI
   - {t: ▽, type: trans}
-  - CLCK
+  - ''
   - END
   - LEFT
   - DOWN
@@ -167,17 +167,17 @@ layers:
   - RIGHT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - UNDO
-  - CUT
-  - COPY
-  - PASTE
+  - ''
+  - ''
+  - ''
+  - ''
   - {t: ▽, type: trans}
   - HOME
   - Gui+ LEFT
   - PG DN
   - PG UP
   - Gui+ RIGHT
-  - END
+  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
