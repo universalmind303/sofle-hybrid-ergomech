@@ -18,12 +18,12 @@
         bhm: balanced_homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;    // <---[[moderate duration]]
-            quick-tap-ms = <85>;
-            flavor = "balanced";
+            tapping-term-ms = <210>;    // <---[[moderate duration]]
+            quick-tap-ms = <160>;
+            flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
 
-            require-prior-idle-ms = <90>;
+            require-prior-idle-ms = <140>;
         };
 
         gesc: gesc {
