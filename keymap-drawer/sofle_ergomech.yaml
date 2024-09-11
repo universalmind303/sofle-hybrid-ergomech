@@ -55,7 +55,7 @@ layers:
   - {t: '-', h: symbols}
   - '='
   - SPACE
-  - {t: BACKSPACE, h: '&lt 2'}
+  - {t: BACKSPACE, h: navigation}
   - {t: Sft+Alt+Gui+ RCTRL, h: sticky}
   - '&key_repeat'
   - ''
@@ -185,7 +185,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
