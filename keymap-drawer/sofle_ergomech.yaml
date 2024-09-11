@@ -56,8 +56,8 @@ layers:
   - '='
   - SPACE
   - {t: BACKSPACE, h: navigation}
-  - {t: Sft+Alt+Gui+ RCTRL, h: sticky}
-  - '&key_repeat'
+  - {t: RIGHT SHIFT, h: sticky}
+  - {t: Meh+ LEFT GUI, h: sticky}
   - ''
   - {t: Sft+ PLAY PAUSE, s: qwerty}
   - NEXT
