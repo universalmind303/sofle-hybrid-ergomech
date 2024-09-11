@@ -24,7 +24,7 @@ layers:
   - Y
   - ;
   - '`'
-  - CAPS
+  - '&cap_dance'
   - {t: A, h: LSHFT}
   - {t: R, h: LALT}
   - {t: S, h: LGUI}
