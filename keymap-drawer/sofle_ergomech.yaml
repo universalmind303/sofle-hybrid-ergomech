@@ -1,6 +1,6 @@
 layers:
-  default:
-  - gresc
+  colemak:
+  - {t: ESC, s: '`'}
   - '1'
   - '2'
   - '3'
@@ -12,8 +12,8 @@ layers:
   - '9'
   - '0'
   - DEL
-  - {t: TAB, h: LCTRL(LALT(LSHFT))}
-  - {t: Q, h: adjust}
+  - {t: TAB, h: Ctl+Alt+ LSHIFT}
+  - {t: Q, h: numpad}
   - W
   - {t: F, h: RCTRL}
   - P
@@ -24,19 +24,19 @@ layers:
   - Y
   - ;
   - '`'
-  - {t: CAPS, h: LCTRL(LALT(LSHFT(LGUI)))}
+  - '&cap_dance'
   - {t: A, h: LSHFT}
   - {t: R, h: LALT}
   - {t: S, h: LGUI}
-  - T
+  - {t: T, h: Sft+Alt+ LCTRL}
   - D
   - H
-  - N
+  - N@
   - {t: E, h: RGUI}
   - {t: I, h: RALT}
   - {t: O, h: RSHFT}
-  - {t: '''', h: LCTRL(LALT(LSHFT(LGUI)))}
-  - LSHFT(TAB)
+  - {t: '''', h: Meh+ LGUI}
+  - Sft+ TAB
   - Z
   - X
   - C
@@ -49,22 +49,22 @@ layers:
   - /
   - RET
   - MUTE
-  - LGUI
-  - LGUI
-  - {t: '-', h: lower}
+  - '&caps_word'
+  - ''
+  - LEFT GUI
+  - {t: '-', h: symbols}
   - '='
-  - RET
-  - {t: SPACE, h: raise}
-  - {t: BSPC, h: raise}
-  - {t: LCTRL(LALT(LSHFT(LGUI))), h: sticky}
-  - RALT
-  - adjust
-  - ENTER
-  - RIGHT
+  - SPACE
+  - {t: BACKSPACE, h: navigation}
+  - {t: RIGHT SHIFT, h: sticky}
+  - {t: Meh+ LEFT GUI, h: sticky}
+  - ''
+  - {t: Sft+ PLAY PAUSE, s: qwerty}
+  - NEXT
   - UP ARROW
-  - LEFT
+  - PREV
   - DOWN
-  lower:
+  symbols:
   - {t: ▽, type: trans}
   - F1
   - F2
@@ -94,7 +94,7 @@ layers:
   - '{'
   - '['
   - <
-  - ''
+  - '&arrrow'
   - ''''
   - '>'
   - ']'
@@ -106,11 +106,12 @@ layers:
   - '}'
   - ']'
   - '>'
-  - ''
+  - '&fat_arrow'
   - ''
   - ''
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - \
+  - \
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -123,19 +124,18 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&tran'
   - A
   - B
   - C
   - D
   - E
-  raise:
+  navigation:
   - ''
   - ''
   - ''
-  - PLAY PAUSE
-  - PREV
-  - NEXT
+  - ''
+  - ''
+  - ''
   - ''
   - ''
   - ''
@@ -145,39 +145,40 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - LCTRL
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - HOME
-  - LGUI(LPAR)
-  - LGUI(LSHFT(LPAR))
-  - LGUI(LSHFT(RPAR))
-  - LGUI(RPAR)
+  - Gui+ [
+  - Gui+Sft+ [
+  - Gui+Sft+ ]
+  - Gui+ ]
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LALT
-  - LCTRL
-  - LSHFT
+  - LEFT SHIFT
+  - LEFT ALT
+  - LEFT GUI
   - {t: ▽, type: trans}
-  - CLCK
+  - ''
   - END
   - LEFT
   - DOWN
-  - UT
+  - UP
   - RIGHT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - UNDO
-  - CUT
-  - COPY
-  - PASTE
+  - ''
+  - ''
+  - ''
+  - ''
   - {t: ▽, type: trans}
   - HOME
-  - LGUI(LEFT)
-  - PGDN
-  - PGUP
-  - LGUI(RIGHT)
-  - END
+  - Gui+ LEFT
+  - PG DN
+  - PG UP
+  - Gui+ RIGHT
+  - ''
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -188,40 +189,29 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - A
   - B
   - C
   - D
   - E
-  adjust:
-  - BT CLR
+  numpad:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - {t: BT, h: '4'}
   - ''
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - EP TOG
-  - {t: RGB HUD, type: held}
-  - RGB HUI
-  - RGB SAD
-  - RGB SAI
-  - RGB EFF
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - RGB BRD
-  - RGB BRI
+  - {type: held}
+  - '1'
+  - '2'
+  - '3'
   - ''
   - ''
   - ''
@@ -231,6 +221,21 @@ layers:
   - ''
   - ''
   - ''
+  - '4'
+  - '5'
+  - '6'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '7'
+  - '8'
+  - '9'
   - ''
   - ''
   - ''
@@ -241,13 +246,8 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - RGB TOG
-  - ''
-  - ''
-  - ''
-  - ''
+  - .
+  - '0'
   - ''
   - ''
   - ''
@@ -259,3 +259,68 @@ layers:
   - C
   - D
   - E
+  qwerty:
+  - ESCAPE
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - BSPC
+  - TAB
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - '['
+  - CAPS
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - ;
+  - ''''
+  - LSHFT
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - ENTER
+  - ''
+  - ''
+  - LCTRL
+  - LALT
+  - LGUI
+  - SPACE
+  - SPACE
+  - RGUI
+  - RALT
+  - RCTRL
+  - ''
+  - {t: colemak, h: toggle}
+  - ''
+  - ''
+  - ''
+  - ''
