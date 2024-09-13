@@ -31,7 +31,7 @@ layers:
   - {t: T, h: Sft+Alt+ LCTRL}
   - D
   - H
-  - N@
+  - N
   - {t: E, h: RGUI}
   - {t: I, h: RALT}
   - {t: O, h: RSHFT}
