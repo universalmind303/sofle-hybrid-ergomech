@@ -16,7 +16,7 @@ layers:
   - {t: Q, h: numpad}
   - W
   - {t: F, h: RCTRL}
-  - P
+  - {t: P, h: Meh+ LEFT GUI}
   - G
   - J
   - L
