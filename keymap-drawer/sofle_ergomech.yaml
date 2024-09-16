@@ -53,7 +53,7 @@ layers:
   - ''
   - LEFT GUI
   - {t: '-', h: symbols}
-  - '='
+  - {t: '=', h: brackets}
   - {t: SPACE, h: brackets}
   - {t: BACKSPACE, h: navigation}
   - {t: brackets, h: sticky}
@@ -378,8 +378,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
