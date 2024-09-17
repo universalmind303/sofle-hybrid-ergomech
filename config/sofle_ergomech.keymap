@@ -70,22 +70,9 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
-            quick-tap-ms = <180>;
-            require-prior-idle-ms = <100>;
-            hold-trigger-key-positions = <25 26 27 15 18 19 20 21 22 30 31 32 33 34 42 43 44 45 46>;
-        };
-
-        rhs_tog: rhs_tog {
-            compatible = "zmk,behavior-hold-tap";
-            label = "RHS_TOG";
-            bindings = <&mo>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "tap-preferred";
-            quick-tap-ms = <180>;
-            require-prior-idle-ms = <100>;
-            hold-trigger-key-positions = <13 14 15 16 17 25 26 27 28 29 37 38 39 40 41>;
+            quick-tap-ms = <190>;
+            require-prior-idle-ms = <90>;
+            hold-trigger-key-positions = <25 26 27 15 18 19 20 21 22 30 31 32 33 34 42 43 44 45 46 23 35 16 28>;
         };
     };
 
@@ -123,12 +110,12 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&gesc                   &kp N1        &kp N2       &kp N3        &kp N4                       &kp N5            &kp N6            &kp N7                &kp N8        &kp N9                    &kp N0        &kp DEL
-&mt LC(LA(LSHIFT)) TAB  &mokp 3 Q     &kp W        &bhm RCTRL F  &bhm LS(LA(LC(LEFT_GUI))) P  &kp G             &kp J             &kp L                 &bhm RCTRL U  &kp Y                     &kp SEMI      &kp GRAVE
-&cap_dance              &bhm LSHFT A  &bhm LALT R  &bhm LGUI S   &bhm LS(LA(LCTRL)) T         &kp D             &kp H             &kp N                 &bhm RGUI E   &bhm RALT I               &bhm RSHFT O  &bhm LS(LA(LC(LGUI))) SQT
-&kp LS(TAB)             &kp Z         &kp X        &kp C         &kp V                        &kp B             &kp K             &kp M                 &kp COMMA     &kp DOT                   &kp FSLH      &kp RET
-&kp C_MUTE              &caps_word    &none        &kp LEFT_GUI  &lt 1 MINUS                  &nav_tog 5 EQUAL  &nav_tog 5 SPACE  &nav_tog 2 BACKSPACE  &sl 5         &sk LS(LA(LC(LEFT_GUI)))  &none
-                                                                                                                &qwerty           &kp C_NEXT            &kp UP_ARROW  &kp C_PREV                &kp DOWN
+&gesc                   &kp N1        &kp N2       &kp N3        &kp N4                       &kp N5            &kp N6     &kp N7                &kp N8            &kp N9                    &kp N0        &kp DEL
+&mt LC(LA(LSHIFT)) TAB  &mokp 3 Q     &kp W        &bhm RCTRL F  &bhm LS(LA(LC(LEFT_GUI))) P  &kp G             &kp J      &kp L                 &bhm RCTRL U      &kp Y                     &kp SEMI      &kp GRAVE
+&cap_dance              &bhm LSHFT A  &bhm LALT R  &bhm LGUI S   &bhm LS(LA(LCTRL)) T         &kp D             &kp H      &kp N                 &bhm RGUI E       &bhm RALT I               &bhm RSHFT O  &bhm LS(LA(LC(LGUI))) SQT
+&kp LS(TAB)             &kp Z         &kp X        &kp C         &kp V                        &kp B             &kp K      &kp M                 &kp COMMA         &kp DOT                   &kp FSLH      &kp RET
+&kp C_MUTE              &none         &none        &kp LEFT_GUI  &lt 1 MINUS                  &nav_tog 5 EQUAL  &kp SPACE  &nav_tog 2 BACKSPACE  &kp SINGLE_QUOTE  &sk LS(LA(LC(LEFT_GUI)))  &none
+                                                                                                                &qwerty    &kp C_NEXT            &kp UP_ARROW      &kp C_PREV                &kp DOWN
             >;
 
             sensor-bindings =
@@ -214,12 +201,12 @@
 
         brackets {
             bindings = <
-&trans  &trans          &trans    &trans        &trans  &trans  &trans  &trans          &trans                &trans                 &trans            &trans
-&trans  &trans          &trans    &kp LCTRL     &trans  &trans  &trans  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RBRC          &trans
-&trans  &kp LEFT_SHIFT  &kp LALT  &kp LEFT_GUI  &trans  &trans  &trans  &kp LESS_THAN   &kp LEFT_BRACKET      &kp RBKT               &kp GREATER_THAN  &trans
-&trans  &trans          &trans    &trans        &trans  &trans  &trans  &trans          &trans                &trans                 &trans            &trans
-&trans  &trans          &trans    &trans        &trans  &trans  &trans  &trans          &trans                &trans                 &trans
-                                                                &trans  &trans          &trans                &trans                 &trans
+&trans  &trans          &trans    &trans        &trans                    &trans  &trans  &trans          &trans                &trans                 &trans            &trans
+&trans  &trans          &trans    &kp LCTRL     &kp LA(LC(LS(LEFT_GUI)))  &trans  &trans  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RBRC          &kp GRAVE
+&trans  &kp LEFT_SHIFT  &kp LALT  &kp LEFT_GUI  &kp LS(LA(LCTRL))         &trans  &trans  &kp LESS_THAN   &kp LEFT_BRACKET      &kp RBKT               &kp GREATER_THAN  &kp SINGLE_QUOTE
+&trans  &trans          &trans    &trans        &trans                    &trans  &trans  &trans          &trans                &trans                 &trans            &trans
+&trans  &trans          &trans    &trans        &trans                    &trans  &trans  &trans          &trans                &trans                 &trans
+                                                                                  &trans  &trans          &trans                &trans                 &trans
             >;
         };
     };
