@@ -49,14 +49,14 @@ layers:
   - /
   - RET
   - MUTE
-  - '&caps_word'
+  - ''
   - ''
   - LEFT GUI
   - {t: '-', h: symbols}
   - {t: '=', h: brackets}
-  - {t: SPACE, h: brackets}
+  - SPACE
   - {t: BACKSPACE, h: navigation}
-  - {t: brackets, h: sticky}
+  - ''''
   - {t: Meh+ LEFT GUI, h: sticky}
   - ''
   - {t: Sft+ PLAY PAUSE, s: qwerty}
@@ -341,26 +341,26 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - LCTRL
-  - {t: ▽, type: trans}
+  - Meh+ LEFT GUI
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '{'
   - (
   - )
   - '}'
-  - {t: ▽, type: trans}
+  - '`'
   - {t: ▽, type: trans}
   - LEFT SHIFT
   - LALT
   - LEFT GUI
-  - {t: ▽, type: trans}
+  - Sft+Alt+ LCTRL
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - <
   - '['
   - ']'
   - '>'
-  - {t: ▽, type: trans}
+  - ''''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
