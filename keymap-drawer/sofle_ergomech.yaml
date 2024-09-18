@@ -344,10 +344,10 @@ layers:
   - Meh+ LEFT GUI
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '{'
+  - ''
   - (
   - )
-  - '}'
+  - ''
   - '`'
   - {t: ▽, type: trans}
   - LEFT SHIFT
@@ -356,10 +356,10 @@ layers:
   - Sft+Alt+ LCTRL
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - <
+  - '{'
+  - '}'
   - '['
   - ']'
-  - '>'
   - ''''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -369,8 +369,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - <
+  - '>'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
