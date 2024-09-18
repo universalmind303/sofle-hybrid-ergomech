@@ -141,12 +141,12 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&trans       &kp F1    &kp F2          &kp F3     &kp F4         &kp F5         &kp F6         &kp F7       &kp F8     &kp F9     &kp F10           &kp F11
-&trans       &kp EXCL  &kp AMPERSAND   &kp EQUAL  &kp MINUS      &kp PIPE       &none          &none        &none      &kp PIPE   &none             &none
-&kp AT_SIGN  &kp LPAR  &kp LEFT_BRACE  &kp LBKT   &kp LESS_THAN  &kp SLASH      &kp SQT        &kp CARET    &kp HASH   &kp ASTRK  &kp DOLLAR        &kp GRAVE
-&trans       &kp RPAR  &kp RBRC        &kp RBKT   &kp GT         &kp BACKSLASH  &kp LESS_THAN  &kp MINUS    &kp EQUAL  &kp UNDER  &kp GREATER_THAN  &trans
-&trans       &trans    &trans          &trans     &trans         &trans         &kp COLON      &kp PERCENT  &trans     &trans     &trans
-                                                                                &kp A          &kp B        &kp C      &kp D      &kp E
+&trans       &kp F1    &kp F2     &kp F3          &kp F4            &kp F5         &kp F6         &kp F7         &kp F8     &kp F9     &kp F10           &kp F11
+&trans       &kp EXCL  &kp MINUS  &kp LESS_THAN   &kp GREATER_THAN  &kp PIPE       &none          &kp AMPERSAND  &kp EQUAL  &kp PIPE   &none             &kp DQT
+&kp AT_SIGN  &kp LPAR  &kp RPAR   &kp LBKT        &kp RBKT          &kp SLASH      &kp GRAVE      &kp CARET      &kp HASH   &kp ASTRK  &kp DOLLAR        &kp SQT
+&trans       &none     &none      &kp LEFT_BRACE  &kp RBRC          &kp BACKSLASH  &kp LESS_THAN  &kp MINUS      &kp EQUAL  &kp UNDER  &kp GREATER_THAN  &trans
+&trans       &trans    &trans     &trans          &trans            &trans         &kp COLON      &kp PERCENT    &trans     &trans     &trans
+                                                                                   &kp A          &kp B          &kp C      &kp D      &kp E
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
