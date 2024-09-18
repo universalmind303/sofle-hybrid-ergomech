@@ -207,10 +207,10 @@
 
         brackets {
             bindings = <
-&trans  &trans          &trans    &trans        &trans                    &trans  &trans  &trans          &trans                &trans                 &trans            &trans
-&trans  &trans          &trans    &kp LCTRL     &kp LA(LC(LS(LEFT_GUI)))  &trans  &trans  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RBRC          &kp GRAVE
-&trans  &kp LEFT_SHIFT  &kp LALT  &kp LEFT_GUI  &kp LS(LA(LCTRL))         &trans  &trans  &kp LESS_THAN   &kp LEFT_BRACKET      &kp RBKT               &kp GREATER_THAN  &kp SINGLE_QUOTE
-&trans  &trans          &trans    &trans        &trans                    &trans  &trans  &trans          &trans                &trans                 &trans            &trans
+&trans  &trans          &trans    &trans        &trans                    &trans  &trans  &trans          &trans                &trans                 &trans             &trans
+&trans  &trans          &trans    &kp LCTRL     &kp LA(LC(LS(LEFT_GUI)))  &trans  &trans  &none           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none              &kp GRAVE
+&trans  &kp LEFT_SHIFT  &kp LALT  &kp LEFT_GUI  &kp LS(LA(LCTRL))         &trans  &trans  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp LEFT_BRACKET       &kp RIGHT_BRACKET  &kp SINGLE_QUOTE
+&trans  &trans          &trans    &trans        &trans                    &trans  &trans  &trans          &kp LESS_THAN         &kp GREATER_THAN       &trans             &trans
 &trans  &trans          &trans    &trans        &trans                    &trans  &trans  &trans          &trans                &trans                 &trans
                                                                                   &trans  &trans          &trans                &trans                 &trans
             >;
