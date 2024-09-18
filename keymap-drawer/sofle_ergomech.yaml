@@ -56,7 +56,7 @@ layers:
   - {t: '=', h: brackets}
   - SPACE
   - {t: BACKSPACE, h: navigation}
-  - ''''
+  - ESCAPE
   - {t: Meh+ LEFT GUI, h: sticky}
   - ''
   - {t: Sft+ PLAY PAUSE, s: qwerty}
@@ -109,8 +109,8 @@ layers:
   - \
   - ''
   - ''
-  - {t: ▽, type: trans}
-  - \
+  - '='
+  - _
   - \
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -120,7 +120,7 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - ':'
-  - {t: ▽, type: trans}
+  - '%'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
