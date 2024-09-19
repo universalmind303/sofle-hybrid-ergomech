@@ -111,6 +111,20 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        rpar {
+            bindings = <&kp RPAR>;
+            key-positions = <30 31>;
+        };
+
+        lpar {
+            bindings = <&kp LPAR>;
+            key-positions = <28 29>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
