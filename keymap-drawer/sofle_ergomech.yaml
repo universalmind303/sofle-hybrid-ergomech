@@ -19,7 +19,7 @@ layers:
   - {t: P, h: Meh+ LEFT GUI}
   - G
   - J
-  - L
+  - {t: L, h: numpad}
   - {t: U, h: RCTRL}
   - Y
   - ;
@@ -54,7 +54,7 @@ layers:
   - LEFT GUI
   - {t: '-', h: symbols}
   - {t: '=', h: brackets}
-  - SPACE
+  - {t: SPACE, s: ESCAPE}
   - {t: BACKSPACE, h: navigation}
   - ESCAPE
   - {t: Meh+ LEFT GUI, h: sticky}
