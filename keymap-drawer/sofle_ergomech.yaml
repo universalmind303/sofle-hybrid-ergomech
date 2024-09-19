@@ -53,7 +53,7 @@ layers:
   - ''
   - LEFT GUI
   - {t: '-', h: symbols}
-  - {t: '=', h: brackets}
+  - '='
   - {t: SPACE, s: ESCAPE}
   - {t: BACKSPACE, h: navigation}
   - ESCAPE
@@ -107,8 +107,8 @@ layers:
   - '['
   - ']'
   - \
+  - ''
   - <
-  - '-'
   - '='
   - _
   - '>'
@@ -324,73 +324,16 @@ layers:
   - ''
   - ''
   - ''
-  brackets:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - LCTRL
-  - Meh+ LEFT GUI
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ''
-  - (
-  - )
-  - ''
-  - '`'
-  - {t: ▽, type: trans}
-  - LEFT SHIFT
-  - LALT
-  - LEFT GUI
-  - Sft+Alt+ LCTRL
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '{'
-  - '}'
-  - '['
-  - ']'
-  - ''''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - <
-  - '>'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
 combos:
 - p: [30, 31]
   k: )
 - p: [28, 29]
   k: (
+- p: [28, 27]
+  k: '{'
+- p: [31, 32]
+  k: '}'
+- p: [26, 27]
+  k: '['
+- p: [32, 33]
+  k: ']'
