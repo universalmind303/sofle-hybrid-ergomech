@@ -389,3 +389,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+combos:
+- p: [30, 31]
+  k: )
+- p: [28, 29]
+  k: (
