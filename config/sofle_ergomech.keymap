@@ -123,6 +123,26 @@
             bindings = <&kp LPAR>;
             key-positions = <28 29>;
         };
+
+        lbrc {
+            bindings = <&kp LBRC>;
+            key-positions = <28 27>;
+        };
+
+        rbrc {
+            bindings = <&kp RBRC>;
+            key-positions = <31 32>;
+        };
+
+        lbkt {
+            bindings = <&kp LBKT>;
+            key-positions = <26 27>;
+        };
+
+        rbkt {
+            bindings = <&kp RBKT>;
+            key-positions = <32 33>;
+        };
     };
 
     keymap {
@@ -139,12 +159,12 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&gesc                   &kp N1        &kp N2       &kp N3        &kp N4                       &kp N5            &kp N6     &kp N7                &kp N8        &kp N9                    &kp N0        &kp DEL
-&mt LC(LA(LSHIFT)) TAB  &mokp 3 Q     &kp W        &bhm RCTRL F  &bhm LS(LA(LC(LEFT_GUI))) P  &kp G             &kp J      &mokp 3 L             &bhm RCTRL U  &kp Y                     &kp SEMI      &kp GRAVE
-&cap_dance              &bhm LSHFT A  &bhm LALT R  &bhm LGUI S   &bhm LS(LA(LCTRL)) T         &kp D             &kp H      &kp N                 &bhm RGUI E   &bhm RALT I               &bhm RSHFT O  &bhm LS(LA(LC(LGUI))) SQT
-&kp LS(TAB)             &kp Z         &kp X        &kp C         &kp V                        &kp B             &kp K      &kp M                 &kp COMMA     &kp DOT                   &kp FSLH      &kp RET
-&kp C_MUTE              &none         &none        &kp LEFT_GUI  &lt 1 MINUS                  &nav_tog 5 EQUAL  &spascape  &nav_tog 2 BACKSPACE  &kp ESCAPE    &sk LS(LA(LC(LEFT_GUI)))  &none
-                                                                                                                &qwerty    &kp C_NEXT            &kp UP_ARROW  &kp C_PREV                &kp DOWN
+&gesc                   &kp N1        &kp N2       &kp N3        &kp N4                       &kp N5     &kp N6     &kp N7                &kp N8        &kp N9                    &kp N0        &kp DEL
+&mt LC(LA(LSHIFT)) TAB  &mokp 3 Q     &kp W        &bhm RCTRL F  &bhm LS(LA(LC(LEFT_GUI))) P  &kp G      &kp J      &mokp 3 L             &bhm RCTRL U  &kp Y                     &kp SEMI      &kp GRAVE
+&cap_dance              &bhm LSHFT A  &bhm LALT R  &bhm LGUI S   &bhm LS(LA(LCTRL)) T         &kp D      &kp H      &kp N                 &bhm RGUI E   &bhm RALT I               &bhm RSHFT O  &bhm LS(LA(LC(LGUI))) SQT
+&kp LS(TAB)             &kp Z         &kp X        &kp C         &kp V                        &kp B      &kp K      &kp M                 &kp COMMA     &kp DOT                   &kp FSLH      &kp RET
+&kp C_MUTE              &none         &none        &kp LEFT_GUI  &lt 1 MINUS                  &kp EQUAL  &spascape  &nav_tog 2 BACKSPACE  &kp ESCAPE    &sk LS(LA(LC(LEFT_GUI)))  &none
+                                                                                                         &qwerty    &kp C_NEXT            &kp UP_ARROW  &kp C_PREV                &kp DOWN
             >;
 
             sensor-bindings =
@@ -164,12 +184,12 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&trans       &kp F1    &kp F2     &kp F3         &kp F4            &kp F5         &kp F6         &kp F7         &kp F8     &kp F9     &kp F10           &kp F11
-&kp TILDE    &kp EXCL  &kp MINUS  &kp LESS_THAN  &kp GREATER_THAN  &kp PIPE       &none          &kp AMPERSAND  &kp EQUAL  &kp PIPE   &none             &kp GRAVE
-&kp AT_SIGN  &kp LPAR  &kp RPAR   &kp LBRC       &kp RBRC          &kp SLASH      &kp GRAVE      &kp CARET      &kp HASH   &kp ASTRK  &kp DOLLAR        &kp DQT
-&trans       &none     &kp MINUS  &kp LBKT       &kp RBKT          &kp BACKSLASH  &kp LESS_THAN  &kp MINUS      &kp EQUAL  &kp UNDER  &kp GREATER_THAN  &trans
-&trans       &trans    &trans     &trans         &trans            &trans         &kp COLON      &kp PERCENT    &trans     &trans     &trans
-                                                                                  &kp A          &kp B          &kp C      &kp D      &kp E
+&trans       &kp F1    &kp F2     &kp F3         &kp F4            &kp F5         &kp F6     &kp F7         &kp F8     &kp F9     &kp F10           &kp F11
+&kp TILDE    &kp EXCL  &kp MINUS  &kp LESS_THAN  &kp GREATER_THAN  &kp PIPE       &none      &kp AMPERSAND  &kp EQUAL  &kp PIPE   &none             &kp GRAVE
+&kp AT_SIGN  &kp LPAR  &kp RPAR   &kp LBRC       &kp RBRC          &kp SLASH      &kp GRAVE  &kp CARET      &kp HASH   &kp ASTRK  &kp DOLLAR        &kp DQT
+&trans       &none     &kp MINUS  &kp LBKT       &kp RBKT          &kp BACKSLASH  &none      &kp LT         &kp EQUAL  &kp UNDER  &kp GREATER_THAN  &trans
+&trans       &trans    &trans     &trans         &trans            &trans         &kp COLON  &kp PERCENT    &trans     &trans     &trans
+                                                                                  &kp A      &kp B          &kp C      &kp D      &kp E
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -225,17 +245,6 @@
 &kp LSHFT   &kp Z   &kp X      &kp C     &kp V     &kp B      &kp N      &kp M     &kp COMMA  &kp DOT    &kp FSLH  &kp ENTER
 &none       &none   &kp LCTRL  &kp LALT  &kp LGUI  &kp SPACE  &kp SPACE  &kp RGUI  &kp RALT   &kp RCTRL  &none
                                                               &to 0      &none     &none      &none      &none
-            >;
-        };
-
-        brackets {
-            bindings = <
-&trans  &trans          &trans    &trans        &trans                    &trans  &trans  &trans          &trans                &trans                 &trans             &trans
-&trans  &trans          &trans    &kp LCTRL     &kp LA(LC(LS(LEFT_GUI)))  &trans  &trans  &none           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none              &kp GRAVE
-&trans  &kp LEFT_SHIFT  &kp LALT  &kp LEFT_GUI  &kp LS(LA(LCTRL))         &trans  &trans  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp LEFT_BRACKET       &kp RIGHT_BRACKET  &kp SINGLE_QUOTE
-&trans  &trans          &trans    &trans        &trans                    &trans  &trans  &trans          &kp LESS_THAN         &kp GREATER_THAN       &trans             &trans
-&trans  &trans          &trans    &trans        &trans                    &trans  &trans  &trans          &trans                &trans                 &trans
-                                                                                  &trans  &trans          &trans                &trans                 &trans
             >;
         };
     };
