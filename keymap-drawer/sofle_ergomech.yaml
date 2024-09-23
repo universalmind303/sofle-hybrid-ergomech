@@ -201,12 +201,12 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - BT CLR
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - ''
   - ''
-  - ''
+  - BT CLR ALL
   - ''
   - {type: held}
   - '1'
