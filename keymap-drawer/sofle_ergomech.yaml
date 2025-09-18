@@ -1,3 +1,4 @@
+layout: {zmk_keyboard: sofle_ergomech}
 layers:
   colemak:
   - {t: ESC, s: '`'}
@@ -12,11 +13,11 @@ layers:
   - '9'
   - '0'
   - DEL
-  - {t: TAB, h: Ctl+Alt+ LSHIFT}
+  - {t: TAB, h: Ctl+Alt+LSHIFT}
   - {t: Q, h: numpad}
   - W
   - {t: F, h: RCTRL}
-  - {t: P, h: Meh+ LEFT GUI}
+  - {t: P, h: Meh+LEFT GUI}
   - G
   - J
   - {t: L, h: numpad}
@@ -28,15 +29,15 @@ layers:
   - {t: A, h: LSHFT}
   - {t: R, h: LALT}
   - {t: S, h: LGUI}
-  - {t: T, h: Sft+Alt+ LCTRL}
+  - {t: T, h: Sft+Alt+LCTRL}
   - D
   - H
   - N
   - {t: E, h: RGUI}
   - {t: I, h: RALT}
   - {t: O, h: RSHFT}
-  - {t: '''', h: Meh+ LGUI}
-  - Sft+ TAB
+  - {t: '''', h: Meh+LGUI}
+  - Sft+TAB
   - Z
   - X
   - C
@@ -57,9 +58,9 @@ layers:
   - {t: SPACE, s: ESCAPE}
   - {t: BACKSPACE, h: navigation}
   - ESCAPE
-  - {t: Meh+ LEFT GUI, h: sticky}
+  - {t: Meh+LEFT GUI, h: sticky}
   - ''
-  - {t: Sft+ PLAY PAUSE, s: qwerty}
+  - {t: Sft+PLAY PAUSE, s: qwerty}
   - NEXT
   - UP ARROW
   - PREV
@@ -149,10 +150,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - HOME
-  - Gui+ [
-  - Gui+Sft+ [
-  - Gui+Sft+ ]
-  - Gui+ ]
+  - Gui+[
+  - Gui+Sft+[
+  - Gui+Sft+]
+  - Gui+]
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - LEFT SHIFT
@@ -173,10 +174,10 @@ layers:
   - ''
   - {t: ▽, type: trans}
   - HOME
-  - Gui+ LEFT
+  - Gui+LEFT
   - PG DN
   - PG UP
-  - Gui+ RIGHT
+  - Gui+RIGHT
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
