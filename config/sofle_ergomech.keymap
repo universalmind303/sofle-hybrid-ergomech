@@ -29,7 +29,7 @@
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
 
-            require-prior-idle-ms = <100>;
+            require-prior-idle-ms = <125>;
         };
 
         gesc: gesc {
